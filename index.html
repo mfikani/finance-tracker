@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Finance Tracker (DEV)</title>
+  <meta charset="UTF-8">
+  <title>Weekly Schedule</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Finance Tracker</h1>
+  <h1>Weekly Appointment Schedule</h1>
+
+  <label for="duration">Appointment Duration:</label>
+  <select id="duration">
+    <option value="1">1 hour</option>
+    <option value="1.25" selected>1.25 hours</option>
+    <option value="1.5">1.5 hours</option>
+    <option value="1.75">1.75 hours</option>
+  </select>
+
+  <div id="schedule-container"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
