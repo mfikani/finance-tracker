@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="page-header">
+  <div class="version-label">V1</div>
   <h1>Weekly Appointment Schedule</h1>
+  <button onclick="clearAllWeek()">Clear All Week</button>
+</div>
+
+<div id="duration-wrapper" style="display: none;">
 
   <label for="duration">Appointment Duration:</label>
   <select id="duration">
@@ -15,7 +21,10 @@
     <option value="1.5">1.5 hours</option>
     <option value="1.75">1.75 hours</option>
   </select>
+</div>
+  
 
+<div id="week-summary" class="summary-box"></div>
   <div id="schedule-container"></div>
 
   <script src="script.js"></script>
